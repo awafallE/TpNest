@@ -1,0 +1,25 @@
+
+<!--div *ngFor=" let bl of blogArticle ">
+ 
+        {{bl.name}}
+</div-->
+
+<div class="container">
+        <div class="row">
+    
+            <div *ngFor="let bl of blogArticle" class="col m4 s">
+                <div class="card horizontal" ><div class="card-image" >
+                    <img [src]="bl.image">
+                </div>
+                <div class="card-stacked"><div class="card-content">
+                    <p>{{bl.name | uppercase}}</p>
+                    <p> <small>{{bl.type }}</small></p>
+                   
+                </div>
+                
+             </div>
+            </div>
+        </div>
+    </div>
+    </div>
+ 
